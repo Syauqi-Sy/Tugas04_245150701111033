@@ -63,8 +63,6 @@ class Pelanggan {
         }
         double cashback = Cashback(pembelian);
         double total = pembelian - cashback;
-        System.out.println(cashback);
-        System.out.println(total);
         if (balance >= total && (balance - total) >= 10000) {
             balance -= total;
             System.out.println("Pembelian berhasil. Saldo Anda sekarang: " + balance + "\n");
